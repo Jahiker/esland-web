@@ -1,4 +1,8 @@
-# Astro Starter Kit: Basics
+# Elands Awards Web page
+
+Made for educational purposes
+
+> ⚠️ This page is not the official one, is just a clone ⚠️
 
 ```sh
 npm create astro@latest -- --template basics
