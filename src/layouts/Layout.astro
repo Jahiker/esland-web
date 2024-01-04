@@ -1,6 +1,9 @@
 ---
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
+// Supports weights 100-900
+import "@fontsource-variable/onest";
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 interface Props {
   title: string;
   description: string;
@@ -25,3 +28,39 @@ const { title, description } = Astro.props;
     <Footer />
   </body>
 </html>
+
+<style is:global>
+  :root {
+    color-scheme: dark;
+  }
+  html {
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+    background: #111e31;
+    font-family: "Onest Variable", sans-serif;
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.4;
+    margin-bottom: 1em;
+    font-weight: 100;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+  }
+
+  strong {
+    color: white;
+    font-weight: 700;
+  }
+</style>
