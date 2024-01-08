@@ -1,8 +1,15 @@
+---
+import { getI18N } from "../i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
 <section class="w-full p-20 max-w-[1400px] mx-auto">
   <h3
     class="uppercase text-center font-semibold mb-10 text-balance text-4xl tracking-wide"
   >
-    GUIA DE LA 3ª EDICIÓN DE LOS PREMIOS ESLAND
+    {i18n.PREFOOTER_TITLE}
   </h3>
 
   <lite-youtube
