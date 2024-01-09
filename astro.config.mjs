@@ -15,3 +15,4 @@ export default defineConfig({
   site: 'https://jahiker.github.io',
   base: '/esland-web',
 });
+
