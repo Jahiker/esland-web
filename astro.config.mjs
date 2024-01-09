@@ -12,4 +12,6 @@ export default defineConfig({
       prefixDefaultLocale: true,
     }
   },
+  site: 'https://jahiker.github.io',
+  base: '/esland-web',
 });
